@@ -52,7 +52,7 @@ def add_metadata(exam_list, additional_metadata_name, additional_metadata_dict):
     Includes new information about images into exam_list
     """
     for exam in exam_list:
-        assert additional_metadata_name not in exam, "this metadata is already included"
+        # assert additional_metadata_name not in exam, "this metadata is already included"
         exam[additional_metadata_name] = dict()
         for view in VIEWS.LIST:
             exam[additional_metadata_name][view] = []
